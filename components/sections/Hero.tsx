@@ -11,10 +11,10 @@ const fadeIn = {
 };
 
 const features = [
-  "Webアプリ開発からAIまで最新技術を学習",
-  "実践的なプロジェクトで確実にスキルアップ",
-  "個人開発・マネタイズの方法も習得",
-  "現役エンジニアによる24時間サポート",
+  "非エンジニアの方でもOK",
+  "アイデア出しからアプリ開発リリースまで",
+  "マネタイズ手法も大公開",
+  "副業やビジネスへの応用も可能",
 ];
 
 const Circles = () => {
@@ -85,7 +85,7 @@ export function Hero() {
             >
               <span className="relative">
                 <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 text-transparent bg-clip-text">
-                  作りたいものが作れる
+                  AI駆動開発で
                 </span>
                 <motion.span
                   className="absolute -top-1 left-0 right-0 h-full w-full bg-gradient-to-r from-primary via-blue-600 to-purple-600 opacity-30 blur-xl"
@@ -95,7 +95,7 @@ export function Hero() {
                 />
               </span>
               <br />
-              <span className="text-foreground">個人開発者になろう</span>
+              <span className="text-foreground">アイデアを形にしよう</span>
             </motion.h1>
 
             <motion.p
@@ -104,10 +104,10 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              「アイデアはあるけど、作り方がわからない」
+              「アイデアはあるけど、Webアプリの作り方がわからない」
               <br />
               そんな想いを卒業しませんか？
-              Web開発からAI活用まで、アイデアを形にする全てのスキルが身につきます。
+              あなたのアイデアを形にするAI駆動開発を学びましょう。
             </motion.p>
 
             <motion.div
@@ -118,7 +118,7 @@ export function Hero() {
             >
               <Button size="lg" className="group relative overflow-hidden">
                 <span className="relative z-10 flex items-center">
-                  カリキュラムを見る
+                  無料でカリキュラム内容を見る
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />

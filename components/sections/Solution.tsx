@@ -15,39 +15,53 @@ const fadeIn = {
 const solutions = [
   {
     icon: Code2,
-    title: "効率的な学習設計",
-    description:
-      "たった5週間で、Web開発からAI活用まで。効率的なカリキュラムで確実に習得",
-    topics: ["体系的な学習", "実践重視", "最短習得", "即戦力化"],
+    title: "アプリ全体の企画・設計スキル",
+    description: "完成から逆算したアプリ開発の設計力を養います。",
+    topics: [
+      "Webアプリのアイデア出し",
+      "要件定義・機能定義",
+      "データベース設計",
+      "Notionを使ったプロジェクト管理",
+    ],
     color: "bg-blue-500",
   },
   {
     icon: Layout,
-    title: "現代的な開発手法",
+    title: "技術スタックの選定スキル",
     description:
-      "Next.js、TypeScript、AIツールなど、今求められている技術が学べます",
-    topics: ["最新技術", "AI活用", "効率的開発", "実践的ツール"],
+      "作るアプリよっては利用する技術スタックが異なります。その選定力も養います。",
+    topics: [
+      "Next.js App Router",
+      "BaaSの利用",
+      "インフラ構築",
+      "本番環境への適用",
+    ],
     color: "bg-green-500",
   },
   {
-    icon: Bot,
-    title: "手厚いサポート",
-    description: "分からないことはすぐに質問。Discordサポート付き",
+    icon: Rocket,
+    title: "AI駆動開発スキル",
+    description: "AIツールを使いこなした開発力を養います。",
     topics: [
-      "ShinCodeへ壁打ち相談",
-      "質問し放題",
-      "情報共有",
-      "モチベーション維持",
+      "Cursorで開発",
+      "Bolt.newで高品質UI",
+      "Claudeへの壁打ち",
+      "他AIツールの紹介",
     ],
-    color: "bg-purple-500",
+    color: "bg-orange-500",
   },
   {
-    icon: Rocket,
-    title: "実績につながる",
+    icon: Bot,
+    title: "マーケティングスキル",
     description:
-      "オリジナルプロダクトの開発から公開まで。実践的な経験が得られます",
-    topics: ["ポートフォリオ", "成果物作成", "公開経験", "実践スキル"],
-    color: "bg-orange-500",
+      "開発力だけではマネタイズはできません。ビジネスに必要なマーケティング力も養います。",
+    topics: [
+      "マネタイズの基本",
+      "買い切り or サブスク",
+      "SNSと広告を使った集客",
+      "利用されるLPの作り方",
+    ],
+    color: "bg-purple-500",
   },
 ];
 
@@ -66,7 +80,7 @@ export function Solution() {
           <h2 className="text-4xl font-bold mb-6">
             <span className="relative">
               <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 text-transparent bg-clip-text">
-                個人開発者になるための
+                AI駆動で個人開発するための
               </span>
               <motion.span
                 className="absolute -top-1 left-0 right-0 h-full w-full bg-gradient-to-r from-primary via-blue-600 to-purple-600 opacity-30 blur-xl"
@@ -76,7 +90,7 @@ export function Solution() {
               />
             </span>
             <br />
-            総合的なスキル
+            総合的なスキルの獲得
           </h2>
           <p className="text-xl text-muted-foreground">
             技術力だけでなく、アイデアを実現し、
@@ -127,7 +141,7 @@ export function Solution() {
           viewport={{ once: true }}
         >
           <Button size="lg" className="group">
-            カリキュラムの詳細を見る
+            無料でカリキュラム内容を見る
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>

@@ -8,7 +8,7 @@ import Link from "next/link";
 const fadeIn = {
   initial: { opacity: 0, y: -20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
+  transition: { duration: 0.6 },
 };
 
 export function Header() {
@@ -23,7 +23,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-primary" />
-            <span className="font-bold text-xl">ShinCode Pro</span>
+            <span className="font-bold text-xl">AI駆動開発マスターコース</span>
           </Link>
 
           <div className="flex items-center gap-6">

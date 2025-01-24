@@ -24,49 +24,49 @@ const fadeIn = {
 
 const phases = [
   {
-    title: "Week 1: 基礎固め",
+    title: "Week 1: 個人開発の基礎",
     duration: "1週目",
     icon: Code2,
     color: "from-blue-500 to-cyan-500",
-    description: "Web開発の基礎を徹底的に学習",
+    description: "個人開発の基礎とマインドセット",
     topics: [
-      "Webの仕組み",
-      "Cursorで開発環境のセットアップ",
-      "HTML/CSS/JavaScriptの基礎",
-      "TypeScriptの基本文法",
-      "Reactの基礎とHooks",
-      "GitとGitHubの使い方",
+      "個人開発のメリットとマインドセット",
+      "個人開発の全体フロー",
+      "個人開発で必要なWeb知識",
+      "AIツールと開発環境のセットアップ",
     ],
   },
   {
-    title: "Week 2: フロントエンド開発",
+    title: "Week 2: アイデア出しと設計",
     duration: "2週目",
     icon: Layout,
     color: "from-purple-500 to-pink-500",
-    description: "Next.jsでのアプリ開発を習得",
+    description: "利用されるアプリのアイデアと設計",
     topics: [
-      "Next.jsの基礎",
-      "Tailwind CSSでのUI実装",
-      "APIとの連携方法",
-      "データフェッチとレンダリング(キャッシュ)",
+      "アイデア出しの基本",
+      "AIを使った市場・競合調査",
+      "マネタイズポイントの把握",
+      "要件・機能定義とデータベース設計",
+      "アプリ全体のフローの把握",
+      "Notionを使ったプロジェクト管理手法",
     ],
   },
   {
-    title: "Week 3: バックエンド開発",
+    title: "Week 3: AI駆動開発1週目",
     duration: "3週目",
     icon: Database,
     color: "from-green-500 to-emerald-500",
     description: "バックエンドとAI機能の実装",
     topics: [
-      "Supabaseでのバックエンド構築",
-      "データベース設計の基礎と構築",
+      "Bolt.newを使った高品質なフロントデザイン",
+      "",
       "ORMの利用とデータフェッチ",
       "ユーザー認証とWebhook",
       "Stripe決済の実装",
     ],
   },
   {
-    title: "Week 4: プロダクトローンチ",
+    title: "Week 4: AI駆動開発2週目",
     duration: "4週目",
     icon: Rocket,
     color: "from-red-500 to-orange-500",
@@ -79,7 +79,7 @@ const phases = [
     ],
   },
   {
-    title: "Week 5: 個人開発者へ",
+    title: "Week 5: AI駆動開発3週目",
     duration: "5週目",
     icon: Laptop2,
     color: "from-orange-500 to-yellow-500",
@@ -93,8 +93,8 @@ const phases = [
     ],
   },
   {
-    title: "Week 6: AI駆動開発",
-    duration: "特典週",
+    title: "Week 6: プロダクトローンチ",
+    duration: "6週目",
     icon: Bot,
     color: "from-purple-600 to-pink-600",
     description: "AI駆動で作る爆速アプリ開発",
@@ -103,6 +103,21 @@ const phases = [
       "Claudeを使った要件定義・設計",
       "Bolt.newを利用したUI開発",
       "Cursorを使ったMVP開発",
+    ],
+  },
+  {
+    title: "特典: AI時代の起業スキル",
+    duration: "特典週",
+    icon: Building,
+    color: "from-emerald-600 to-teal-600",
+    description: "個人開発から学ぶAI時代の起業スキル",
+    topics: [
+      "個人開発からビジネス化への戦略",
+      "収益化モデルの設計と実装",
+      "ユーザーグロース戦略",
+      "プロダクトブランディング",
+      "法人化と資金調達の基礎",
+      "複数プロダクトの運用術",
     ],
   },
 ];
@@ -123,7 +138,7 @@ export function CurriculumRoadmap() {
         >
           <Badge className="mb-4">カリキュラム</Badge>
           <h2 className="text-4xl font-bold mb-6">
-            5週間＋特典1週で身に付く
+            6週間で身に付く
             <br />
             <span className="relative">
               <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 text-transparent bg-clip-text">
@@ -143,14 +158,14 @@ export function CurriculumRoadmap() {
             確実にスキルを身につけるカリキュラム設計。
             <br />
             <span className="text-primary font-medium">
-              ＋AI駆動開発の特典付き
+              ＋ビジネス展開の特典付き
             </span>
           </p>
         </motion.div>
 
         <div className="space-y-8 relative">
           {/* Connection Line */}
-          <div className="absolute left-[2.25rem] top-12 bottom-12 w-px bg-gradient-to-b from-primary/50 via-primary/20 to-transparent hidden md:block" />
+          <div className="absolute left-[1rem] top-12 bottom-12 w-px bg-gradient-to-b from-primary/50 via-primary/20 to-transparent hidden md:block" />
 
           {phases.map((phase, index) => (
             <motion.div

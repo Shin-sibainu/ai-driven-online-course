@@ -15,20 +15,20 @@ const problems = [
     icon: Brain,
     title: "技術選定の迷い",
     description:
-      "React? Next.js? どの技術を使えばいいのか分からず、最初の一歩が踏み出せない",
+      "React? Next.js? どの技術を使えばいいのか分からず、最初の一歩が踏み出せない。",
     color: "text-red-500",
   },
   {
     icon: Code2,
     title: "開発の壁",
-    description:
-      "プログラミングの基礎から最新のフレームワークまで、独学では効率的に学べない",
+    description: "全体像が把握できておらず、何から開発すれば良いか分からない。",
     color: "text-amber-500",
   },
   {
     icon: Rocket,
-    title: "アイデアの実現",
-    description: "「作りたいものがある」けれど、具体的な実装方法が分からない",
+    title: "エラーの多発",
+    description:
+      "AIを使ってもエラーが解決できずに前に進めない。リリースまで漕ぎつけない。",
     color: "text-emerald-500",
   },
   {
