@@ -2,40 +2,50 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Lightbulb, BookOpen, Users, Target } from "lucide-react";
+import {
+  ArrowRight,
+  PlayCircle,
+  Code2,
+  Rocket,
+  MessageCircle,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
+  transition: { duration: 0.6 },
 };
 
 const steps = [
   {
-    icon: Lightbulb,
-    title: "無料カウンセリング",
-    description: "あなたの目標や現在のスキルレベルをヒアリングし、最適な学習プランをご提案します。",
-    color: "bg-yellow-500"
+    icon: PlayCircle,
+    title: "カリキュラム視聴",
+    description:
+      "AIを活用した最新の開発手法を、実践的な動画で学習できます。好きな時間に、自分のペースで進められます。",
+    color: "bg-blue-500",
   },
   {
-    icon: BookOpen,
-    title: "カリキュラム選択",
-    description: "目標達成に必要なカリキュラムを選択し、学習環境をセットアップします。",
-    color: "bg-emerald-500"
+    icon: Code2,
+    title: "ハンズオン学習",
+    description:
+      "実際のプロダクト開発を通して、AIツールの使い方から本番デプロイまでを体験。理解が深まります。",
+    color: "bg-emerald-500",
   },
   {
-    icon: Users,
-    title: "学習開始",
-    description: "専任メンターのサポートを受けながら、実践的なプロジェクトに取り組みます。",
-    color: "bg-blue-500"
+    icon: MessageCircle,
+    title: "コミュニティサポート",
+    description:
+      "専用のDiscordサーバーで、分からないことを質問したり、仲間と情報交換ができます。24時間いつでも質問OK。",
+    color: "bg-purple-500",
   },
   {
-    icon: Target,
-    title: "目標達成",
-    description: "キャリアサポートを受けながら、就職・転職・副業を実現します。",
-    color: "bg-purple-500"
-  }
+    icon: Rocket,
+    title: "プロダクトローンチ",
+    description:
+      "学んだ知識を活かして、自分だけのプロダクトを開発。収益化の方法まで学べます。",
+    color: "bg-orange-500",
+  },
 ];
 
 export function HowItWorks() {
@@ -49,12 +59,11 @@ export function HowItWorks() {
           variants={fadeIn}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold mb-6">
-            学習の流れ
-          </h2>
+          <h2 className="text-4xl font-bold mb-6">学習の進め方</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            TechMasterでの学習は、あなたの目標達成まで<br />
-            しっかりとサポートします。
+            自分のペースで学べる、
+            <br />
+            実践的なカリキュラムとコミュニティサポート。
           </p>
         </motion.div>
 
@@ -70,14 +79,20 @@ export function HowItWorks() {
                 viewport={{ once: true }}
               >
                 <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 relative group">
-                  <div className={`w-16 h-16 rounded-2xl ${step.color} text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto`}>
+                  <div
+                    className={`w-16 h-16 rounded-2xl ${step.color} text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto`}
+                  >
                     <step.icon className="w-8 h-8" />
                   </div>
                   <div className="absolute -top-3 left-4 bg-primary text-primary-foreground text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center">
                     {index + 1}
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-center">{step.title}</h3>
-                  <p className="text-muted-foreground text-center">{step.description}</p>
+                  <h3 className="text-xl font-bold mb-4 text-center">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground text-center">
+                    {step.description}
+                  </p>
                 </Card>
               </motion.div>
             ))}
@@ -92,7 +107,7 @@ export function HowItWorks() {
           viewport={{ once: true }}
         >
           <Button size="lg" className="group">
-            無料カウンセリングを予約する
+          【先着予約】20%OFFクーポンを受け取る
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>
