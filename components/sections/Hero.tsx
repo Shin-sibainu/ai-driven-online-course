@@ -77,25 +77,16 @@ export function Hero() {
               </span>
             </motion.div>
 
-            <motion.h1
-              className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-            >
+            <motion.h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="relative">
-                <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 text-transparent bg-clip-text">
-                  AI駆動開発で
+                <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 text-transparent bg-clip-text tracking-normal">
+                  ShinCode Pro
                 </span>
-                <motion.span
-                  className="absolute -top-1 left-0 right-0 h-full w-full bg-gradient-to-r from-primary via-blue-600 to-purple-600 opacity-30 blur-xl"
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 0.3 }}
-                  transition={{ duration: 1 }}
-                />
               </span>
               <br />
-              <span className="text-foreground">アイデアを形にしよう</span>
+              <span className="text-2xl md:text-4xl text-foreground">
+                AI駆動開発マスターコース
+              </span>
             </motion.h1>
 
             <motion.p

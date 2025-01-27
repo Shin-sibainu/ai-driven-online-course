@@ -50,7 +50,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24">
+    <section className="py-24" id="howitworks">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -107,7 +107,7 @@ export function HowItWorks() {
           viewport={{ once: true }}
         >
           <Button size="lg" className="group">
-          【先着予約】20%OFFクーポンを受け取る
+            【先着予約】無料で20%OFFクーポンを受け取る
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>

@@ -5,22 +5,24 @@ import Link from "next/link";
 
 const footerLinks = {
   会社情報: [
-    { label: "会社概要", href: "#" },
+    // { label: "会社概要", href: "#" },
     { label: "特定商取引法に基づく表記", href: "#" },
     { label: "プライバシーポリシー", href: "#" },
     { label: "利用規約", href: "#" },
   ],
   講座について: [
-    { label: "Web開発コース", href: "#" },
-    { label: "AI開発コース", href: "#" },
-    { label: "ビジネス副業コース", href: "#" },
-    { label: "法人研修", href: "#" },
+    {
+      label: "ShinCode_Camp",
+      href: "https://code-s-school-5bc2.thinkific.com/bundles/shincode-pro",
+    },
+    { label: "AI駆動開発マスターコース", href: "/" },
+    // { label: "ビジネス副業コース", href: "#" },
+    // { label: "法人研修", href: "#" },
   ],
   サポート: [
-    { label: "よくある質問", href: "#" },
-    { label: "お問い合わせ", href: "#" },
-    { label: "受講の流れ", href: "#" },
-    { label: "採用情報", href: "#" },
+    { label: "よくある質問", href: "#faq" },
+    { label: "受講の流れ", href: "#howitworks" },
+    { label: "お問い合わせ", href: "https://x.com/Shin_Engineer" },
   ],
 };
 
@@ -46,12 +48,13 @@ export function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
+                
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

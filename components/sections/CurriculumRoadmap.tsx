@@ -116,7 +116,11 @@ const phases = [
 
 export function CurriculumRoadmap() {
   return (
-    <section className="py-24 bg-muted/30 relative overflow-hidden">
+    <section
+      id="curriculum"
+      className="py-24 bg-muted/30 relative overflow-hidden"
+      style={{ scrollMarginTop: "4rem" }}
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8883_1px,transparent_1px),linear-gradient(to_bottom,#8883_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000,transparent)]" />
 

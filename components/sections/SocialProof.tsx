@@ -142,7 +142,10 @@ function ReviewCarousel() {
 
 export function SocialProof() {
   return (
-    <section className="py-24 bg-gradient-to-b from-muted/30 to-background">
+    <section
+      id="features"
+      className="py-24 bg-gradient-to-b from-muted/30 to-background"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"

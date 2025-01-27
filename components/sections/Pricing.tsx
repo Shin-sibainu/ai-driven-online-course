@@ -25,7 +25,7 @@ const features = [
 
 export function Pricing() {
   return (
-    <section className="py-16 bg-muted/30">
+    <section id="pricing" className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-12"
@@ -83,11 +83,11 @@ export function Pricing() {
 
               <Button className="w-full" size="lg">
                 <CreditCard className="mr-2 w-4 h-4" />
-                【先着予約】20%OFFクーポンを受け取る
+                【先着予約】無料で20%OFFクーポンを受け取る
               </Button>
 
               <p className="text-sm text-muted-foreground text-center mt-4">
-                ＊クレジットカードは不要。メールアドレスのみで予約できます。
+                ＊予約なのでお支払いは発生いたしません。メールアドレスのみで予約できます。
               </p>
             </Card>
           </motion.div>

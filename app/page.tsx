@@ -10,6 +10,7 @@ import { Pricing } from "@/components/sections/Pricing";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { CurriculumRoadmap } from "@/components/sections/CurriculumRoadmap";
+import { FAQ } from "@/components/sections/FAQ";
 
 // ・見込み客の興味付けを行うコンテンツ
 // ・悩みへの共感
@@ -35,6 +36,7 @@ export default function Home() {
         <SocialProof />
         <HowItWorks />
         <Pricing />
+        <FAQ/>
         <CTA />
       </main>
       <Footer />
