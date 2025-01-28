@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Code2, Layout, Bot, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -140,10 +141,12 @@ export function Solution() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Button size="lg" className="group">
-            無料でカリキュラム内容を見る
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link href="#curriculum">
+            <Button size="lg" className="group">
+              カリキュラムを見る
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

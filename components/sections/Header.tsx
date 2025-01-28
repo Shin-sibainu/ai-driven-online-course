@@ -54,10 +54,16 @@ export function Header() {
                 ))}
               </nav>
 
-              <Button size="sm" className="group">
-                無料で予約する
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link
+                href="https://skinny-talos-8be.notion.site/1891dcf229c280139d19f2d8d1048b90?pvs=105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="sm" className="group">
+                  無料で予約する
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

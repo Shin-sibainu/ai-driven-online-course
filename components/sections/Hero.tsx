@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code2, CheckCircle, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -101,20 +102,25 @@ export function Hero() {
               実際のプロダクト開発を通して本物の開発力を身に付ける講座です。
             </motion.p>
 
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.6 }}
-            >
-              <Button size="lg" className="group relative overflow-hidden">
-                <span className="relative z-10 flex items-center">
-                  無料でカリキュラム内容を見る
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Link
+                href="https://skinny-talos-8be.notion.site/1891dcf229c280139d19f2d8d1048b90?pvs=105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="group">
+                  無料で予約する
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </Button>
-            </motion.div>
+                </Button>
+              </Link>
+
+              <Link href="#curriculum">
+                <Button size="lg" variant="outline" className="group">
+                  カリキュラムを見る
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
 
             <div className="grid grid-cols-2 gap-4">
               {features.map((feature, index) => (

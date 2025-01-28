@@ -51,7 +51,6 @@ export function Footer() {
                     <Link
                       href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
-                
                     >
                       {link.label}
                     </Link>

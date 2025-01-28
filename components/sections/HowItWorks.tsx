@@ -10,6 +10,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -106,10 +107,16 @@ export function HowItWorks() {
           variants={fadeIn}
           viewport={{ once: true }}
         >
-          <Button size="lg" className="group">
-            【先着予約】無料で20%OFFクーポンを受け取る
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link
+            href="https://skinny-talos-8be.notion.site/1891dcf229c280139d19f2d8d1048b90?pvs=105"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" className="group">
+              【先着予約】無料で20%OFFクーポンを受け取る
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

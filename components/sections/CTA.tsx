@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Sparkles, Timer } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -60,10 +61,16 @@ export function CTA() {
                 <li>✓ 優先受講権</li>
                 <li>✓ Discordサーバー招待リンクも提供</li>
               </ul>
-              <Button size="lg" className="w-full group">
-                無料で予約する
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link 
+                href="https://skinny-talos-8be.notion.site/1891dcf229c280139d19f2d8d1048b90?pvs=105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="w-full group">
+                  無料で予約する
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <p className="text-sm text-muted-foreground text-center mt-4">
                 ＊予約は無料です。メールアドレスのみで登録できます。
               </p>

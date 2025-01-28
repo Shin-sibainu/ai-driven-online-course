@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, CreditCard, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -81,10 +82,16 @@ export function Pricing() {
                 ))}
               </div>
 
-              <Button className="w-full" size="lg">
-                <CreditCard className="mr-2 w-4 h-4" />
-                【先着予約】無料で20%OFFクーポンを受け取る
-              </Button>
+              <Link 
+                href="https://skinny-talos-8be.notion.site/1891dcf229c280139d19f2d8d1048b90?pvs=105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="w-full" size="lg">
+                  <CreditCard className="mr-2 w-4 h-4" />
+                  【先着予約】無料で20%OFFクーポンを受け取る
+                </Button>
+              </Link>
 
               <p className="text-sm text-muted-foreground text-center mt-4">
                 ＊予約なのでお支払いは発生いたしません。メールアドレスのみで予約できます。
